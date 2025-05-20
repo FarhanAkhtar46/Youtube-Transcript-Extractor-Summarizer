@@ -10,7 +10,7 @@ import TranscriptViewer from "./TranscriptViewer";
 interface Transcript {
   id: string;
   title: string;
-  content: string;
+  content: { text: string; start: number; duration: number }[];
   url: string;
 }
 
