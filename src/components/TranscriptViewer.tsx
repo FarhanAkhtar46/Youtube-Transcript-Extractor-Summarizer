@@ -104,7 +104,7 @@ const TranscriptViewer = ({
 
   const handleSummarize = async (url) => {
     try {
-      const response1 = await fetch('http://localhost:8000/summarize', {
+      const response1 = await fetch('https://yt-backend.azurewebsites.net/summarize', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

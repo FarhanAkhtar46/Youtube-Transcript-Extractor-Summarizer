@@ -31,7 +31,7 @@ export default function TranscriptExtractionSection() {
     setProcessedVideos(0);
 
     try {
-      const response = await fetch('http://localhost:8000/transcript', {
+      const response = await fetch('https://yt-backend.azurewebsites.net/transcript', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
